@@ -10,6 +10,5 @@ n = int(input("Введите количество элементов 2 масс
 b = [RD(0,100) for _ in range(n)]
 print("Массив состоит из: ", *a)
 print("Массив состоит из: ", *b)
-
-mult_rez = set(a) | set(b)
+mult_rez = set(a) & set(b)
 print("Упорядоченное множество целых чисел сгенерированных массивов: ", sorted(mult_rez))

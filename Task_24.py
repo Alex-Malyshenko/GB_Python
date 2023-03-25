@@ -14,6 +14,6 @@
 n = int(input())
 a = [int(input()) for _ in range(n)]
 rez = []
-for i in range(n-1):
+for i in range(1, n-1):
     rez.append(a[i-1] + a[i] + a[i+1])
 print(max(rez))
